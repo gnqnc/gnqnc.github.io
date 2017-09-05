@@ -33,3 +33,78 @@ body {
 footer {
     margin: 50px 0;
 }
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:"Source Sans Pro",sans-serif;
+  font-weight:bold;
+}
+
+
+.h--alt {
+    font-weight: 300;
+	margin-top:0;
+}
+
+
+
+h5 {
+	font-size:16px;
+}
+
+h6 {
+	font-size:14px;
+}
+
+a {
+	color:#0e48ad;
+}
+
+a:focus, a:hover {
+	color:#123294;
+}
+
+/* -------------------*/
+
+/*-----------------------*/
+/*----- TESTIMONIAL -----*/
+/*-----------------------*/
+
+.testimonial {
+	padding: 0px 15px 30px 30px;
+
+	margin:15px 0;
+  border-color: #cfb87c #ddd #ddd;
+}
+
+.testimonial blockquote {
+    font-family: "source sans pro";
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+
+.testimonial blockquote blah:before {
+	    color: #ccc;
+	    content: open-quote;
+	    font-size: 5em;
+	    line-height: 0em;
+	    margin-right: 0.1em;
+	    vertical-align: -0.4em;
+}
+
+.testimonial blockquote blah:after {
+		content: close-quote;
+		visibility:hidden;
+		font-size: 1em;
+}
+
+.testimonial blockquote p {
+    margin-top: 10px;
+}
+
+.testimonial blockquote cite {
+    font-weight: 600;
+    width: 100%;
+}
