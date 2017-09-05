@@ -3,6 +3,10 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+p {
+    font-size: 16px;
+}
+
 
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
@@ -73,14 +77,13 @@ a:focus, a:hover {
 
 .testimonial {
 	padding: 0px 15px 30px 30px;
-
 	margin:15px 0;
   border-color: #cfb87c #ddd #ddd;
 }
 
 .testimonial blockquote {
     font-family: "source sans pro";
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     margin: 0 0 40px;
 }
