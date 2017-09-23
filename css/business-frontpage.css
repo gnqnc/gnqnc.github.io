@@ -3,10 +3,16 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-p {
+
+p, ol, ul, li {
     font-size: 16px;
+    margin: 0 0 10px;
 }
 
+ol ul li {
+    font-size: 15px;
+    margin: 0 0 0px;
+}
 
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
