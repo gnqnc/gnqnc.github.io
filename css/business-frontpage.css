@@ -4,8 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-p, ol, ul, li {
-    font-size: 16px;
+p, ol, ul, li, h4 {
+    font-size: 14pt;
     margin: 0 0 10px;
 }
 
