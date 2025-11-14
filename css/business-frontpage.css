@@ -1,12 +1,19 @@
 /*
- * Start Bootstrap - Business Frontpage (http://startbootstrap.com/)
+ * Start Bootstrap - Business Frontpage<a href="http://startbootstrap.com/" target="_blank" rel="noopener noreferrer nofollow"></a>
  * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ * Licensed under MIT<a href="https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE" target="_blank" rel="noopener noreferrer nofollow"></a>
  */
 
 p, ol, ul, li, h4 {
-    font-size: 14pt;
-    margin: 0 0 10px;
+    color: #333; /* Off-black for readability */
+    font-size: 1.1rem; /* Slightly larger than 14pt for modern feel; was ~14pt */
+    line-height: 1.6; /* Better spacing between lines */
+    margin-bottom: 1.5rem; /* More generous margins between paragraphs/lists */
+}
+
+p, .lead {
+    line-height: 1.6; /* Better readability */
+    margin-bottom: 1.5rem; /* Space between paragraphs */
 }
 
 ol ul li {
@@ -19,22 +26,24 @@ nav li {
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #f8f9fa; /* Off-white; change to #fff if you want pure white */
+    color: #333; /* Slightly off-black text for all body content */
+    padding-top: 56px; /* Keep for navbar */
 }
 
-/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+.container {
+    max-width: 1000px; /* Narrower for focused reading - modern trend for content sites */
+    padding: 0.5rem 1rem; /* Extra padding around main content */
+}
 
+/* Header Image Background */
 .business-header {
-    height: 400px;
-    background: url('../imgs/main.jpg') center center no-repeat scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    height: 50vh; /* Modern flexible height */
+    background: url('../imgs/main.jpg') center center no-repeat;
     background-size: cover;
-    -o-background-size: cover;
 }
 
 /* Customize the text color and shadow color and to optimize text legibility. */
-
 .tagline {
     text-shadow: 0 0 10px #000;
     color: #fff;
@@ -48,46 +57,42 @@ footer {
     margin: 50px 0;
 }
 
-
-
 h1, h2, h3, h4, h5, h6 {
-  font-family:"Source Sans Pro",sans-serif;
-  font-weight:bold;
+    font-family:"Source Sans Pro",sans-serif;
+    font-weight:bold;
+    color: #212529; /* Darker gray for headings to stand out */
+    margin-top: 2rem; /* Space above headings */
+    margin-bottom: 1rem; /* Space below */
 }
-
 
 .h--alt {
     font-weight: 300;
-	margin-top:0;
+    margin-top:0;
 }
 
-
-
 h5 {
-	font-size:16px;
+    font-size:16px;
 }
 
 h6 {
-	font-size:14px;
+    font-size:14px;
 }
 
 a {
-	color:#0e48ad;
+    color: #0e48ad; /* Your existing blue */
+    text-decoration: none; /* Remove underlines for clean look */
+    transition: color 0.2s ease; /* Subtle hover animation - modern micro-interaction */
 }
 
 a:focus, a:hover {
-	color:#123294;
+    color: #123294; /* Your existing hover */
+    text-decoration: underline; /* Add underline on hover for accessibility */
 }
 
-/* -------------------*/
-
-/*-----------------------*/
-/*----- TESTIMONIAL -----*/
-/*-----------------------*/
-
+/* Testimonial Styles (unchanged) */
 .testimonial {
-	padding: 0px 15px 30px 30px;
-	margin:15px 0;
+    padding: 0px 15px 30px 30px;
+    margin:15px 0;
   border-color: #cfb87c #ddd #ddd;
 }
 
@@ -99,18 +104,18 @@ a:focus, a:hover {
 }
 
 .testimonial blockquote blah:before {
-	    color: #ccc;
-	    content: open-quote;
-	    font-size: 5em;
-	    line-height: 0em;
-	    margin-right: 0.1em;
-	    vertical-align: -0.4em;
+        color: #ccc;
+        content: open-quote;
+        font-size: 5em;
+        line-height: 0em;
+        margin-right: 0.1em;
+        vertical-align: -0.4em;
 }
 
 .testimonial blockquote blah:after {
-		content: close-quote;
-		visibility:hidden;
-		font-size: 1em;
+        content: close-quote;
+        visibility:hidden;
+        font-size: 1em;
 }
 
 .testimonial blockquote p {
@@ -120,4 +125,86 @@ a:focus, a:hover {
 .testimonial blockquote cite {
     font-weight: 600;
     width: 100%;
+}
+
+.business-header {
+    position: relative;
+}
+.business-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Light overlay for softer image - optional */
+}
+
+.card {
+    border: none; /* Remove borders for minimalism */
+    background-color: #fff; /* White cards on off-white bg for contrast */
+    border-radius: 0.75rem; /* Softer rounded corners - 2025 trend */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Very light shadow for depth */
+}
+.card-body {
+    padding: 1.5rem; /* More generous internal spacing */
+}
+.card-title {
+    font-size: 1.25rem; /* Slightly larger headings for hierarchy */
+    margin-bottom: 1rem;
+}
+
+.list-group-item {
+    border: none; /* Clean, borderless list */
+    padding: 0.75rem 0; /* Vertical spacing between items */
+    color: #333;
+    background-color: transparent; /* No extra bg */
+}
+
+.row.align-items-start {
+    row-gap: 1.5rem; /* Vertical space if columns wrap on smaller screens */
+}
+
+.img-fluid {
+    max-width: 100%; /* Ensures image doesn't overflow its column */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Prevents inline spacing issues */
+    margin: 0 auto; /* Centers on mobile */
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow - modern depth */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 576px) {
+    .business-header {
+        height: 30vh; /* Shorter on mobile */
+    }
+    .container {
+        padding: 1.5rem 1rem; /* Adjust for mobile */
+    }
+    ul, ol {
+        padding-left: 1rem; /* Less indent on small screens */
+    }
+    .row {
+        text-align: center; /* Center image and text on mobile */
+    }
+    .img-fluid {
+        margin-bottom: 2rem !important; /* Extra space below image */
+        max-width: 50%; /* Smaller image on tablets for balance */
+    }
+    .card-body {
+        padding: 1.25rem; /* Slightly less on small screens */
+    }
+    .row.align-items-start {
+        flex-direction: column; /* Force stack at md widths to prevent squeeze/overlap */
+        align-items: center; /* Center when stacked */
+    }
+    .col-md-4 {
+        margin-bottom: 2rem !important; /* Extra space below image on mobile */
+    }
+    .col-lg-4, .col-lg-8 {
+        width: 100%; /* Full width when stacked */
+    }
 }

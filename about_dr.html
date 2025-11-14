@@ -13,11 +13,16 @@
 
     <title>About Dr. Nikolskaya, neurologist</title>
 
+    <!-- Google Fonts for Source Sans Pro (keep as is) -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/business-frontpage.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -28,25 +33,7 @@
   ga('create', 'UA-105867232-1', 'auto');
   ga('send', 'pageview');
 
-
-
-
-
-
-
-
-
-
-
     </script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-
-    <![endif]-->
 
 </head>
 
@@ -59,116 +46,101 @@
 </header>
 
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="nav"></nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container" id="nav"></div> <!-- Content will load here -->
+</nav>
 
 <!-- Page Content -->
-<div class="container">
-
-    <div class="row">
-        <div class="col-sm-1">
+<div class="container py-5">
+    <div class="row align-items-start gx-5 gy-4"> <!-- Increased gy-4 for vertical space when stacked -->
+        <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0"> <!-- Changed to lg; added mb-4 for space when stacked -->
+            <img src="imgs/galina3.png" class="img-fluid rounded shadow-sm me-lg-5" alt="Dr. Galina Nikolskaya" style="max-width: 300px;"> <!-- me-lg-5 for right margin only on lg+ -->
         </div>
-        <div class="col-sm-4">
-            <!--<img src="imgs/galina.png" width="350px" height="467px" style="margin-top: 20px;">-->
-            <img src="imgs/galina3.png" width="300px" height="451px" style="margin-top: 20px;">
-        </div>
-        <div class="col-sm-6">
-            <h3>ABOUT DR. GALINA NIKOLSKAYA</h3>
-            <p>
-                Dr. Galina Nikolskaya is a top ranked Neurologist in an active clinical practice in San Diego, CA,
-                recognized as a Top 1 Neurologist in the Orange Country Region during a Spring 2017 HealthTap Best
-                Doctor competition and America’s Top Physician 2017 by Consumers Research Council of America.
+        <div class="col-lg-8">
+            <h2 class="mb-4">About Dr. Galina Nikolskaya</h2>
+            <p class="lead">
+                Dr. Galina Nikolskaya is a top ranked Neurologist in an active clinical practice in San Diego, CA, recognized as a Top 1 Neurologist in the Orange County Region during a Spring 2017 HealthTap Best Doctor competition and America’s Top Physician 2017 by Consumers Research Council of America.
             </p>
 
-            <h3>Residency</h3>
-            <p>
-                Dr. Nikolskaya completed her residency in Neurology at a highly reputable and rigorous residency program
-                at the University of California San Diego (UCSD).
-            </p>
-            <h3>Fellowship</h3>
-            <p>
-                Dr. Nikolskaya completed an ACGME accredited Clinical Neurophysiology fellowship at Harbor-UCLA. During
-                the fellowship training, she became skilled in electrodiagnostics including electroencephalography
-                (EEG), electromyography (EMG), nerve conduction studies (NCS). During her fellowship, she acquired
-                additional expertise in neuromuscular disorders, pediatric and adult seizures, vagal nerve stimulator
-                programming, and botulinum toxin treatment of various conditions including chronic migraines, cervical
-                dystonia, arm or leg dystonia, blepharospasm, hemifacial spasm.
-            </p>
-            <h3>Clinical Interests</h3>
-            <p>
-                Dr. Nikolskaya has additional experience with headache management, traumatic brain injuries, ADHD and
-                pediatric behavior management.
-            </p>
-            <h3>Publications</h3>
-            <ul>
-                <li>
-                    Glossopharyngeal neuralgia in a Current Pain Headache Report journal.
-                </li>
-                <li>
-                    FDG-PET Regional Glucose Abnormalities in White Matter in Civilian Impact and Military Blast-Related
-                    Mild Traumatic Brain Injury in the Journal of Biological Psychiatry.
-                </li>
+            <div class="card shadow-sm mb-4 rounded">
+                <div class="card-body">
+                    <h3 class="card-title">Residency</h3>
+                    <p>
+                        Dr. Nikolskaya completed her residency in Neurology at a highly reputable and rigorous residency program at the University of California San Diego (UCSD).
+                    </p>
+                </div>
+            </div>
 
-            </ul>
-            <h3>Professional Certifications</h3>
-            <ul>
-                <li>
-                    Diplomate of an American Academy of Neurology and Psychiatry
-                </li>
-                <li>
-                    Diplomate of an American Board of Medical Specialties in Clinical Neurophysiology.
-                </li>
+            <div class="card shadow-sm mb-4 rounded">
+                <div class="card-body">
+                    <h3 class="card-title">Fellowship</h3>
+                    <p>
+                        Dr. Nikolskaya completed an ACGME accredited Clinical Neurophysiology fellowship at Harbor-UCLA. During the fellowship training, she became skilled in electrodiagnostics including electroencephalography (EEG), electromyography (EMG), nerve conduction studies (NCS). During her fellowship, she acquired additional expertise in neuromuscular disorders, pediatric and adult seizures, vagal nerve stimulator programming, and botulinum toxin treatment of various conditions including chronic migraines, cervical dystonia, arm or leg dystonia, blepharospasm, hemifacial spasm.
+                    </p>
+                </div>
+            </div>
 
-            </ul>
-            <h3>Academic Affiliation</h3>
-            <p>
-                Dr. Nikolskaya previously served as an associate staff neurologist at Harbor - UCLA Medical Center
-                affiliated with the David Geffen School of Medicine at UCLA, where she taught neurology to medical
-                students, interns and residents.
-            </p>
-            <h3>Professional Society Membership</h3>
-            <p>
-                Dr. Nikolskaya is an active member of an American Academy of Neurology and enjoys staying up to date
-                with all the current developments in the field.
-            </p>
+            <div class="card shadow-sm mb-4 rounded">
+                <div class="card-body">
+                    <h3 class="card-title">Clinical Interests</h3>
+                    <p>
+                        Dr. Nikolskaya has additional experience with headache management, traumatic brain injuries, ADHD and pediatric behavior management.
+                    </p>
+                </div>
+            </div>
 
-        </div>
-        <div class="col-sm-1">
-        </div>
-    </div>
-    <!-- /.row -->
+            <div class="card shadow-sm mb-4 rounded">
+                <div class="card-body">
+                    <h3 class="card-title">Publications</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="bi bi-journal-text me-2"></i> Glossopharyngeal neuralgia in a Current Pain Headache Report journal.</li>
+                        <li class="list-group-item"><i class="bi bi-journal-text me-2"></i> FDG-PET Regional Glucose Abnormalities in White Matter in Civilian Impact and Military Blast-Related Mild Traumatic Brain Injury in the Journal of Biological Psychiatry.</li>
+                    </ul>
+                </div>
+            </div>
 
-    <!-- Footer -->
+            <div class="card shadow-sm mb-4 rounded">
+                <div class="card-body">
+                    <h3 class="card-title">Professional Certifications</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="bi bi-award me-2"></i> Diplomate of an American Academy of Neurology and Psychiatry</li>
+                        <li class="list-group-item"><i class="bi bi-award me-2"></i> Diplomate of an American Board of Medical Specialties in Clinical Neurophysiology.</li>
+                    </ul>
+                </div>
+            </div>
 
-    <footer>
-        <div class="row">
-            <div class="col-lg-12">
-                <!-- <p>Copyright &copy; Your Website 2014</p> -->
+            <div class="card shadow-sm mb-4 rounded">
+                <div class="card-body">
+                    <h3 class="card-title">Academic Affiliation</h3>
+                    <p>
+                        Dr. Nikolskaya previously served as an associate staff neurologist at Harbor - UCLA Medical Center affiliated with the David Geffen School of Medicine at UCLA, where she taught neurology to medical students, interns and residents.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mb-4 rounded">
+                <div class="card-body">
+                    <h3 class="card-title">Professional Society Membership</h3>
+                    <p>
+                        Dr. Nikolskaya is an active member of an American Academy of Neurology and enjoys staying up to date with all the current developments in the field.
+                    </p>
+                </div>
             </div>
         </div>
-        <!-- /.row -->
-    </footer>
-
+    </div>
 </div>
 <!-- /.container -->
-
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 
 <script>
-    $("#nav").load("common_nav.html");
-
-
-
-
-
-
-
-
-
+    fetch('common_nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading nav:', error));
 </script>
 
 </body>
