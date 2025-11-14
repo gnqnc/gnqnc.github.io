@@ -12,6 +12,9 @@
     <meta name="title" content="Dr. Nikolskaya - Second Opinions and Concierge Neurology Care">
     <title>Dr. Nikolskaya - Second Opinions and Concierge Neurology Care</title>
 
+    <!-- Google Fonts for Source Sans Pro (keep as is) -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -32,13 +35,6 @@
 
     </script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -50,27 +46,24 @@
 </header>
 
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="nav"></nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container" id="nav"></div> <!-- Content will load here -->
+</nav>
 
 <!-- Page Content -->
 <div class="container">
 
 
     <div class="row">
-        <div class="col-sm-3">
-        </div>
-        <div class="col-sm-6">
+        <div class="col-md-6 offset-md-3">
             <h2 style="margin-top: 40px;">Testimonials</h2>
         </div>
-        <div class="col-sm-3">
-        </div>
+
     </div>
 
     <section class="testimonial" aria-label="testimonal">
         <div class="row">
-            <div class="col-sm-3">
-            </div>
-            <div class="col-md-6">
+            <div class="col-md-6 offset-md-3">
                 <blockquote aria-label="testimonial comment">
                     <blah>Thank you so much for being a phenomenal neurologist and an amazing person we are grateful to
                         have found. With tons of gratitude. Your patient care and compassion are unmatched!
@@ -129,8 +122,6 @@
                     </p>
                 </blockquote>
             </div>
-            <div class="col-sm-3">
-            </div>
         </div>
     </section>
     <!-- Footer -->
@@ -147,19 +138,16 @@
 </div>
 <!-- /.container -->
 
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
-
-
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 
 <script>
-    $("#nav").load("common_nav.html");
-
-
-
+    fetch('common_nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading nav:', error));
 </script>
 
 </body>
