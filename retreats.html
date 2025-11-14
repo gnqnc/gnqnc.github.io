@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuro Reset Retreats</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f0ebe6; /* Lighter background for a brighter feel */
+            color: #555; /* Softer dark text */
+            font-family: 'Arial', sans-serif;
+        }
+        h1, h2 {
+            color: #212529; /* Darker headings */
+        }
+        h3, h4, h5, h6 {
+            color: #8b6d6d; /* Darker headings */
+        }
+        .header-banner {
+            background-image: url('r_imgs/serene-beach.png'); /* Updated hero image path */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 60vh;
+            opacity: 0.9; /* Slightly less faded for vibrancy */
+        }
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.3); /* Light overlay for brightness */
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        .section-image {
+            max-height: 400px;
+            object-fit: cover;
+            transition: transform 0.3s ease; /* Smooth transition for zoom */
+        }
+        .section-image:hover {
+            transform: scale(1.05); /* Barely noticeable zoom on hover */
+        }
+        .testimonial-accordion .accordion-button {
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .cta-button {
+            background-color: #212529;
+            color: #fff;
+            border: none;
+        }
+        .cta-button:hover {
+            background-color: #333;
+        }
+        .highlights-paragraph {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Banner with Logo and Headline -->
+    <div class="header-banner">
+        <div class="header-overlay text-center">
+            <div>
+                <img src="r_imgs/logo.png" alt="Neuro Reset Retreats Logo" class="logo">
+                <h1>Rewire Your Mind for Lasting Resilience</h1>
+                <h2>Neuro Reset Retreats: Tailored 3-Day Experiences for Legal Pros</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content with Alternating Sections -->
+    <div class="container my-5">
+
+        <!-- Introduction Section: Text Left, Image Right -->
+        <section class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h3>Transform Your Stress in Just Three Days</h3>
+                <p>What if a short getaway could reset your stress levels, enhance your focus, and build mental toughness? Guided by Dr. Galina Nikolskaya, our private retreats offer 1:1 or 2:1 sessions in a peaceful San Diego beach setting.</p>
+                <p>Crafted for attorneys: Apply neuroscience to recharge amid demanding schedules. Cut down on stress, improve brain function, and form habits for top performance.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="r_imgs/sunset-birds-beach.png" alt="Peaceful beach setting for relaxation" class="img-fluid section-image">
+            </div>
+        </section>
+
+        <!-- Key Highlights Section: Image Left, Text Right -->
+        <section class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="r_imgs/yoga.png" alt="Wellness activities like sauna and yoga" class="img-fluid section-image">
+            </div>
+            <div class="col-md-6">
+                <h3>Core Elements of the Retreat</h3>
+                <p class="highlights-paragraph">Dive into proven methods including mindfulness practices, blended therapies like ACT, CBT, DBT, and IFS, along with EMDR elements, guided hypnosis, advanced breathwork, sand therapy, and interactive approaches such as Gestalt and psychodrama. Embrace natural elements through guided beach strolls and captivating sunset sessions. Incorporate daily wellness routines featuring cortisol monitoring, luxurious saunas paired with invigorating cold plunges, professional massages, and optional gentle movements like yoga or tai chi. Everything is provided for your convenience: a luxury beachfront stay, gourmet chef-prepared meals, a customized workbook to take home, and supportive follow-up Zoom sessions spanning two months.</p>
+                <p class="text-center">📍 San Diego, CA</p>
+            </div>
+        </section>
+
+        <!-- Bio Section: Text Left, Image Right -->
+        <section class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h3>Meet Dr. Galina Nikolskaya</h3>
+                <p>Board-certified neurologist, expert in brain health and trauma, founder of Neuro Reset Retreats. She helps driven professionals unwind, recharge, and thrive using science-backed tools.</p>
+                <p>Blending therapies like CBT, EMDR, hypnosis, and more with her coaching expertise and athletic background, she delivers quick resilience-building techniques.</p>
+                <p>Collaborating with legal firms to foster habits that safeguard focus, rest, and well-being under pressure.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="r_imgs/galina_h.png" alt="Portrait of Dr. Galina Nikolskaya" class="img-fluid section-image">
+            </div>
+        </section>
+
+        <!-- Testimonials Section: Full Width with Accordion -->
+        <section class="mb-5">
+            <h3 class="text-center mb-4">Stories from Our Participants</h3>
+            <div class="accordion testimonial-accordion" id="testimonialAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Marianna Samuels, O.D. – Optometrist, San Diego
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#testimonialAccordion">
+                        <div class="accordion-body">
+                            <p>As a doctor myself, I can say Dr. Nikolskaya delivers transformative results. Post-retreat, I feel grounded and less reactive to stress. It's improved my family life and sparked my creativity. Her guidance is essential—highly recommend for self-improvement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Danny Cornell – Personal Injury Attorney, Iowa
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#testimonialAccordion">
+                        <div class="accordion-body">
+                            <p>A unique experience with meticulous planning. I felt a real brain shift—more flexible thinking and better sleep. Dr. Nikolskaya's insights during walks were spot-on. From stressed to open-minded and renewed.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            April Cornell – Business Owner, Iowa
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#testimonialAccordion">
+                        <div class="accordion-body">
+                            <p>Exciting learning in a relaxed setting. Shifted from stagnation to fresh views and stronger relationships. Grateful for boosted confidence and emotional tools. Dr. Nikolskaya's care is inspiring.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section: Full Width -->
+        <section class="text-center mb-5">
+            <h3>Ready for Your Reset?</h3>
+            <p>Reach out for availability in February through May or a free discovery call.</p>
+            <p>Can't join soon? Sign up for the waitlist.</p>
+            <a href="mailto:galina@myneuro.care" class="btn cta-button btn-lg">Inquire Today</a>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="text-center">
+            <p><small>For wellness and education only—not medical treatment. Consult professionals for health concerns. Led by a certified neurologist with advanced training.</small></p>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
