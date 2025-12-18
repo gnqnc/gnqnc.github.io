@@ -3,181 +3,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neuro Reset Retreats</title>
+    <title>Neuro Reset Retreats | Rewire Your Mind for Lasting Resilience</title>
+    <meta name="description" content="Tailored 3-day neuroscience-backed retreats for legal professionals. Reset stress, build resilience in serene San Diego beaches. Led by Dr. Galina Nikolskaya.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Neuro Reset Retreats">
+    <meta property="og:description" content="Transform stress into strength with personalized sessions.">
+    <meta property="og:image" content="r_imgs/hero_beach.webp">
+    <meta property="og:url" content="https://yourusername.github.io/neuro-reset-retreats">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
     <style>
-        body {
-            background-color: #f0ebe6; /* Lighter background for a brighter feel */
-            color: #555; /* Softer dark text */
-            font-family: 'Arial', sans-serif;
-        }
-        h1, h2 {
-            color: #212529; /* Darker headings */
-        }
-        h3, h4, h5, h6 {
-            color: #8b6d6d; /* Darker headings */
-        }
-        .header-banner {
-            background-image: url('r_imgs/serene-beach.png'); /* Updated hero image path */
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            height: 60vh;
-            opacity: 0.9; /* Slightly less faded for vibrancy */
-        }
-        .header-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgba(255, 255, 255, 0.3); /* Light overlay for brightness */
-        }
-        .logo {
-            max-width: 200px;
-            margin-bottom: 20px;
-        }
-        .section-image {
-            max-height: 400px;
-            object-fit: cover;
-            transition: transform 0.3s ease; /* Smooth transition for zoom */
-        }
-        .section-image:hover {
-            transform: scale(1.05); /* Barely noticeable zoom on hover */
-        }
-        .testimonial-accordion .accordion-button {
-            background-color: #f8f9fa;
-            color: #212529;
-        }
-        .cta-button {
-            background-color: #212529;
-            color: #fff;
-            border: none;
-        }
-        .cta-button:hover {
-            background-color: #333;
-        }
-        .highlights-paragraph {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
+    @font-face { font-family: 'Grosa'; src: url('../fonts/grosa.woff2') format('woff2'); font-weight: 400; }
     </style>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/retreats.css">
 </head>
 <body>
+    <!-- Hero Banner - ONLY H1 on Beach -->
+    <header class="hero-banner" data-aos="fade-up" data-aos-duration="100">
+        <div class="hero-content text-center">
+            <h1>Neuro Reset Retreat</h1>
+            <p >Exhale. Reset. </br>Become yourself again.</p>
+        </div>
+    </header>
 
-    <!-- Hero Banner with Logo and Headline -->
-    <div class="header-banner">
-        <div class="header-overlay text-center">
-            <div>
-                <img src="r_imgs/logo.png" alt="Neuro Reset Retreats Logo" class="logo">
-                <h1>Rewire Your Mind for Lasting Resilience</h1>
-                <h2>Neuro Reset Retreats: Tailored 3-Day Experiences for Legal Pros</h2>
+    <!-- New Intro Section - Logo + H1 + Opening Text -->
+    <section id="intro" class="py-5 bg-light" data-aos="fade-up" data-aos-delay="200">
+        <div class="container text-center">
+            <div class="intro-logo mb-4">
+                <img src="r_imgs/retreats_logo.png" alt="Neuro Reset Retreat Lotus Logo" class="mb-3" style="max-width: 150px; height: auto;"> 
+                <h2 class="section-title">Neuro Reset Retreat</h2> 
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <p class="lead mb-4 mt-1">Celebrate the power of a healthy brain through a Neuro Reset Retreat - a personalized, transformative experience dedicated to nurturing neuroplasticity, neurogenesis, and cultivating cognitive sharpness, clarity, well-being, creativity, and emotional resilience. Engage in inspiring conversations that deeply examine your thoughts and emotions, hands-on neuro workshops, and reflective practices , time. In a focused setting with all attention on you, emerge with enhanced brain health, vitality, and self-understanding through cutting-edge modalities—an unforgettable journey of growth.</p>
+                    <a href="#main-video" class="btn btn-outline-primary btn-lg">More Details...</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Main Content with Alternating Sections -->
-    <div class="container my-5">
+    <!-- Serene Setting -->
+    <section id="setting" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center mb-1 mt-5">
+                <h2 class="section-title">The Serene Setting</h2>
+            </div>
+            <div class="row align-items-start">
+                <div class="col-md-4 order-1 order-md-2">
+                    <div class="setting-text">
+                        <p class="mb-4">Nurture deep well-being in a space curated to your preferences. Calming ocean sounds, open-air breathwork, and fresh air harmonize with your body's natural rhythms, promoting restful relaxation and sleep as nature intended.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-7 order-2 order-md-1">
+                    <img src="r_imgs/walking-sand.webp" alt="Serene beach setting" class="img-fluid image-lift-hover">
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
-        <!-- Introduction Section: Text Left, Image Right -->
-        <section class="row align-items-center mb-5">
-            <div class="col-md-6">
-                <h3>Transform Your Stress in Just Three Days</h3>
-                <p>What if a short getaway could reset your stress levels, enhance your focus, and build mental toughness? Guided by Dr. Galina Nikolskaya, our private retreats offer 1:1 or 2:1 sessions in a peaceful San Diego beach setting.</p>
-                <p>Crafted for attorneys: Apply neuroscience to recharge amid demanding schedules. Cut down on stress, improve brain function, and form habits for top performance.</p>
+    <!-- Meet Your Guide -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center" data-aos="fade-up" data-aos-delay="200">
+                
+                <div class="col-md-6 order-md-1 text-md-start">
+                    <h2 class="section-title mb-2 mt-4 text-start">Meet Your Guide</h2>
+                    <p>Led by a neurologist with 15 years of holistic one-on-one guidance, trained in modalities like ACT, CBT, IFS, EMDR, hypnosis, life coaching, contemplative practices, yoga, dance, and mindfulness. Passionate about teaching, Dr. Nikolskaya also incorporates other valuable insights from areas of Stoic philosophy, Montessori principles, fitness, and sports psychology.
+                            <br>
+                        As a former elite athlete and busy professional, she deeply understands high-achievers, especially health and legal professionals, drawn from 9 years as a medical-legal consultant to multiple law firms. A physician with psychology training, mother, wife, and teacher, she advocates for motivated learners, creating ripple effects for personal and professional thriving.
+                        </p>
+                </div>
+                <div class="col-md-6 order-md-2">
+                    <img src="r_imgs/dr_galina.png" alt="Dr. Galina Nikolskaya portrait" class="img-fluid" style="object-fit: cover;">
+                </div>
             </div>
-            <div class="col-md-6">
-                <img src="r_imgs/sunset-birds-beach.png" alt="Peaceful beach setting for relaxation" class="img-fluid section-image">
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Key Highlights Section: Image Left, Text Right -->
-        <section class="row align-items-center mb-5">
-            <div class="col-md-6">
-                <img src="r_imgs/yoga.png" alt="Wellness activities like sauna and yoga" class="img-fluid section-image">
+    <!-- Main Video -->
+    <section id="main-video" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title mt-5 mb-2" data-aos="fade-up">Inside the Retreat</h2>
+            
+            <div class="row align-items-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="video-wrapper"> 
+                    <iframe src="https://www.youtube.com/embed/F0u1YQR4mGw" 
+                            title="Neuro Reset Retreat Experience" 
+                            frameborder="0"  
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h3>Core Elements of the Retreat</h3>
-                <p class="highlights-paragraph">Dive into proven methods including mindfulness practices, blended therapies like ACT, CBT, DBT, and IFS, along with EMDR elements, guided hypnosis, advanced breathwork, sand therapy, and interactive approaches such as Gestalt and psychodrama. Embrace natural elements through guided beach strolls and captivating sunset sessions. Incorporate daily wellness routines featuring cortisol monitoring, luxurious saunas paired with invigorating cold plunges, professional massages, and optional gentle movements like yoga or tai chi. Everything is provided for your convenience: a luxury beachfront stay, gourmet chef-prepared meals, a customized workbook to take home, and supportive follow-up Zoom sessions spanning two months.</p>
-                <p class="text-center">📍 San Diego, CA</p>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Bio Section: Text Left, Image Right -->
-        <section class="row align-items-center mb-5">
-            <div class="col-md-6">
-                <h3>Meet Dr. Galina Nikolskaya</h3>
-                <p>Board-certified neurologist, expert in brain health and trauma, founder of Neuro Reset Retreats. She helps driven professionals unwind, recharge, and thrive using science-backed tools.</p>
-                <p>Blending therapies like CBT, EMDR, hypnosis, and more with her coaching expertise and athletic background, she delivers quick resilience-building techniques.</p>
-                <p>Collaborating with legal firms to foster habits that safeguard focus, rest, and well-being under pressure.</p>
+    <!-- schedule discovery now -->
+    <section id="discovery" class="py-5">
+        <div class="container  text-center">
+            <h2 class="text-center section-title section-title-white mt-5 mb-2" data-aos="fade-up">Schedule Discovery Call</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <p class="lead mb-4 mt-4">Book a free session to explore if it's right for you</p>
+                    <a href="#cta" class="btn btn-outline-primary btn-lg">BOOK NOW</a>
+                </div>
             </div>
-            <div class="col-md-6">
-                <img src="r_imgs/galina_h.png" alt="Portrait of Dr. Galina Nikolskaya" class="img-fluid section-image">
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Testimonials Section: Full Width with Accordion -->
-        <section class="mb-5">
-            <h3 class="text-center mb-4">Stories from Our Participants</h3>
-            <div class="accordion testimonial-accordion" id="testimonialAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Marianna Samuels, O.D. – Optometrist, San Diego
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#testimonialAccordion">
-                        <div class="accordion-body">
-                            <p>As a doctor myself, I can say Dr. Nikolskaya delivers transformative results. Post-retreat, I feel grounded and less reactive to stress. It's improved my family life and sparked my creativity. Her guidance is essential—highly recommend for self-improvement.</p>
+    <!-- What You'll Experience -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title section-title-white mt-5" data-aos="fade-up">What You'll Experience</h2>
+            <div class="col-lg-12 text-center">
+                <p class="lead mb-5 mt-4">This customizable, participant-led journey adapts hourly to your needs</p>
+            </div>
+            <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-4 ">
+                        <div class="card-body text-center">
+                            <h3>EXPECT</h3>
+                            <p>at least two holotropic breathwork sessions with deep integration, one sand play session for profound reflection, and experiential time in nature with brain- boosting techniques.</p>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Danny Cornell – Personal Injury Attorney, Iowa
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#testimonialAccordion">
-                        <div class="accordion-body">
-                            <p>A unique experience with meticulous planning. I felt a real brain shift—more flexible thinking and better sleep. Dr. Nikolskaya's insights during walks were spot-on. From stressed to open-minded and renewed.</p>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-4 ">
+                        <div class="card-body text-center">
+                            <h3>Dr. Nikolskaya</h3>
+                            <p>includes an executive coach to design systems optimizing your home life, finances, family, and work— ensuring habits endure.</p>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            April Cornell – Business Owner, Iowa
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#testimonialAccordion">
-                        <div class="accordion-body">
-                            <p>Exciting learning in a relaxed setting. Shifted from stagnation to fresh views and stronger relationships. Grateful for boosted confidence and emotional tools. Dr. Nikolskaya's care is inspiring.</p>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-4 ">
+                        <div class="card-body text-center">
+                            <h3>Like a mental hug</h3>
+                            <p>it's fully focused on you: disconnect from screens, embrace new ways of operating, and leave with insights, strategies, a custom workbook, and renewed resilience.</p>
+                        </div>
+                    </div>
+                </div>
+        
+        </div>
+    </section>
+
+    <!-- Combined Personalization & Post-Retreat Support Section -->
+    <section id="personalization-support" class="combined-bg py-5" data-aos="fade-up">
+        <div class="container">
+            
+            <div class="row align-items-start mb-5 mt-5">
+                <div class="col-md-6">
+                    <img src="r_imgs/woman_beach.png" alt="Woman relaxing on beach" class="img-fluid rounded shadow-sm image-lift-hover">
+                </div>
+                <div class="col-md-6">
+                    <div class="section-text">
+                        <h2 class="section-title">Personalization</h2>
+                        <p>Led by a neurologist with 15 years of holistic one-on-one guidance, trained in modalities like ACT, CBT, IFS, EMDR, hypnosis, life coaching, contemplative practices, yoga, dance, and mindfulness. Passionate about teaching, Dr. Nikolskaya also incorporates other valuable insights from areas of Stoic philosophy, Montessori principles, fitness, and sports psychology.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-start mb-5 mt-5">
+                <div class="col-md-6 order-md-2">
+                    <img src="r_imgs/suport.png" alt="Man on Zoom follow-up call" class="img-fluid rounded shadow-sm image-lift-hover">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <div class="section-text">
+                        <h2 class="section-title">Post-Retreat Support</h2>
+                        <p>Three complimentary Zoom follow-ups, one week apart, sustain momentum and integrate learnings. Post retreat workbook will be designed and tailored to each participant depending on what areas were covered, with more learning points and strategies implemented weeks post retreat. There will be personalized audio recordings made available to allow for continued practice.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section id="waitlist" class="py-5 text-center">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title section-title-white mt-3 mb-2">Join the Waitlist</h2>
+            <p>Spots for February–May fill quickly. Secure yours today.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <a href="#cta" class="btn btn-outline-primary btn-lg">Sign Up Below</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impression (Testimonials) Section - Wide Horizontal Internal Cards -->
+    <section id="impressions" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <!-- Centered Title -->
+            <div class="text-center mb-5">
+                <h2 class="section-title">Impressions</h2>
+            </div>
+
+            <!-- Card 1 - Marianna (Video Left, Text Right) -->
+            <div class="testimonial-card image-lift-hover mb-3">
+                <div class="row align-items-center g-0">
+                    <div class="col-lg-2">
+                        <div class="testimonial-media position-relative">
+                            <div class="video-wrapper" style="height: 150px"> 
+                                <iframe src="https://www.youtube.com/embed/pDtdnVozSek"
+                                        title="Brain Optimization Retreat Feedback" 
+                                        frameborder="0" 
+                                        referrerpolicy="strict-origin-when-cross-origin" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="testimonial-content">
+                            <p class="quote">"Transformative—grounded, less reactive. Improved family life and creativity."</p>
+                            <p class="signature">— Marianna Samuels, O.D.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- CTA Section: Full Width -->
-        <section class="text-center mb-5">
-            <h3>Ready for Your Reset?</h3>
-            <p>Reach out for availability in February through May or a free discovery call.</p>
-            <p>Can't join soon? Sign up for the waitlist.</p>
-            <a href="mailto:galina@myneuro.care" class="btn cta-button btn-lg">Inquire Today</a>
-        </section>
+            <!-- Card 2 - Danny (Video Left, Text Right) -->
+            <div class="testimonial-card image-lift-hover mb-3">
+                <div class="row align-items-center g-0">
+                    <div class="col-lg-2">
+                        <div class="testimonial-media position-relative">
+                            <div class="video-wrapper" style="height: 150px"> 
+                                <iframe src="https://www.youtube.com/embed/ujV8WObqLLo" 
+                                        title="Testimonial of Neuro Reset Retreat Participant" 
+                                        frameborder="0" 
+                                        referrerpolicy="strict-origin-when-cross-origin" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="testimonial-content">
+                            <p class="quote">"Real brain shift—flexible thinking, better sleep. From stressed to renewed."</p>
+                            <p class="signature">— Danny Cornell, Attorney</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Disclaimer -->
-        <section class="text-center">
-            <p><small>For wellness and education only—not medical treatment. Consult professionals for health concerns. Led by a certified neurologist with advanced training.</small></p>
-        </section>
-    </div>
+            <!-- Card 3 - April (Static Headshot Left, Text Right) -->
+            <div class="testimonial-card image-lift-hover mb-3">
+                <div class="row align-items-center g-0">
+                    <div class="col-lg-2">
+                        <div class="testimonial-media static">
+                            <img src="r_imgs/april.webp" alt="April Cornell" class="img-fluid rounded-start">
+                            <!-- No play overlay -->
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="testimonial-content">
+                            <p class="quote">"Fresh views, stronger relationships. Grateful for emotional tools."</p>
+                            <p class="signature">— April Cornell, Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- CTA Section -->
+    <section id="cta" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title section-title-white mt-3 mb-2">Ready to Reset?</h2>
+            <p class="lead mb-5" style="max-width: 800px; margin: 0 auto;">
+                Spots fill quickly—join our exclusive waitlist for priority access, or inquire about the discovery Zoom call, scheduling, pricing, or availability.
+            </p>
+            <!-- Form -->
+            <form id="cta-form" action="https://formspree.io/f/xzdppary" method="POST" class="row justify-content-center g-3 mb-4">
+                <input type="hidden" name="_ajax" value="1">
+                <div class="col-md-4">
+                    <input type="text" name="name" class="form-control" placeholder="Name*" required >
+                </div>
+                <div class="col-md-4">
+                    <input type="email" name="email" class="form-control" placeholder="E-mail*" required >
+                </div>
+                <!-- Optional Message (Full Width, Below Name/Email) -->
+                <div class="col-8">
+                    <textarea name="message" class="form-control" placeholder="Message (optional)" rows="4"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-outline-primary btn-lg">BOOK NOW</button>
+                </div>
+            </form>
+            <div id="thank-you-message" class="text-center d-none">
+                <p class="lead" style="font-size: 1.8rem;">Message sent, thank you!</p>
+                <p>We’ll be in touch soon.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+                    <p class="mb-2 d-flex align-items-center justify-content-md-start justify-content-center">
+                        <img src="r_imgs/location.webp" alt="Location icon" class="me-2" style="width: 20px; height: 20px;">
+                        <span class="mx-2">San Diego, CA</span>
+                    </p>
+                    <p class="mb-0 d-flex align-items-center justify-content-md-start justify-content-center">
+                        <img src="r_imgs/at.webp" alt="Phone icon" class="me-2" style="width: 20px; height: 20px;">
+                        <span class="mx-2"><a href="mailto:info@mynero.care">info@mynero.care</a></span>
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="r_imgs/retreats_logo.png" alt="Neuro Reset Retreat Lotus Logo" style="width: 80px; margin-bottom: 1rem;">
+                    <p class="mb-0">
+                        Neuro Reset Retreat
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end text-center">
+                    <a href="https://www.instagram.com/doctorgalinamd/" class="mx-2">
+                        <img src="r_imgs/ig.webp" alt="Instagram" style="width: 40px;">
+                    </a>
+                    <a href="https://www.facebook.com/Dr.GalinaNikolskaya" class="mx-2">
+                        <img src="r_imgs/f.webp" alt="Facebook" style="width: 40px;">
+                    </a>
+                    <a href="https://www.youtube.com/@DoctorGalina" class="mx-2">
+                        <img src="r_imgs/yt.webp" alt="YouTube" style="width: 40px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/retreats.js"></script>
+
+
 </body>
 </html>

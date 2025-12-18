@@ -1,0 +1,489 @@
+/* Reset & Base */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+body, p, .lead, a  { 
+    font-family: 'Inter', "Helvetica Neue", Arial, sans-serif; 
+    font-weight: 100; 
+    font-size: 1.0rem;
+    color: #9b9a9b; 
+    line-height: 1.5; 
+}
+
+@media (max-width: 768px) {
+    p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Hero Banner - Normal Scroll, No Fixed */
+.hero-banner { 
+    position: relative; 
+    height: 100vh; 
+    background: url('../r_imgs/hero_beach.webp') center/cover no-repeat; 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center; 
+    overflow: hidden; 
+    z-index: 2; 
+}
+.hero-banner::before { 
+    content: ''; 
+    position: absolute; 
+    top: 0; left: 0; width: 100%; height: 100%; 
+    pointer-events: none; z-index: 0; 
+}
+.hero-content { 
+    z-index: 1; 
+    max-width: 1000px; 
+    padding: 0 1rem; 
+    margin-top: 60vh; /* Low on sand */
+}
+.hero-content h1 { 
+    font-family: 'Playball', cursive; 
+    color: #fff; 
+    font-size: clamp(2.5rem, 5vw, 4rem); 
+    font-weight: 100; 
+    letter-spacing: 0.1em; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    margin: 0; 
+    line-height: 1; 
+}
+.hero-content p { 
+    font-family: 'Playball', cursive; 
+    color: #fff; 
+    font-size: clamp(1.5rem, 2vw, 2rem); 
+    font-weight: 100; 
+    letter-spacing: 0.1em; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    margin-top: 15vh; 
+    line-height: 1; 
+}
+
+@media (max-width: 768px) { 
+    .hero-content { 
+        margin-top: 60vh; /* Pulls up slightly on small screens */
+        padding: 0 0.5rem; 
+    } 
+    .hero-content h1 { 
+        font-size: 3rem; 
+    } 
+    .hero-content p {
+        font-size: 2rem; 
+    }
+
+}
+
+section {
+    background-color: #FBFAFB;
+}
+
+.section-title { 
+    font-family: 'Playball', cursive;  
+    font-size: 3rem; 
+    letter-spacing: 0.05em; 
+    font-weight: 100; 
+    color: #ada39a; 
+    margin-bottom: 1.5rem; 
+    margin-top: 1.5rem; 
+    text-align: center; 
+    position: relative; 
+    display: block;
+}
+.section-title::after {
+    width: 60px; 
+    height: 2px; 
+    margin: 0.5rem auto 0; 
+}
+
+.section-title-white {
+    color: #fff; 
+}
+
+@media (max-width: 768px) { 
+    .section-title { 
+        font-size: 2.5rem; 
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+.container {
+    max-width: 1000px;
+}
+
+
+/* Sections - White with Optional Pattern Under Paragraphs */
+#intro { 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh; /* height of the section for the purpose of the image */
+    background: url('../r_imgs/background_1.webp') center/cover no-repeat; 
+    margin-top: -45vh; /* Pulls up the background image behind hero—no gap on scroll */
+    opacity: 1; 
+}
+#intro .container { 
+    margin-top: 20vh !important; /* not sure from where but increasing that supposed to pull content down */
+    min-height: 100vh; /* height of the section content wise */
+    
+}
+
+#intro .section-title {
+    padding-bottom: 15px; /* Gap to line, adjust distance (15px close, 30px far) */
+    position: relative;
+}
+#intro .section-title::after { /* this is needed for the underline */
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0; 
+    width: 438px; 
+    height: 2px;
+    background: #ada39a; 
+    border-radius: 1px;
+}
+
+#setting { 
+    position: relative; 
+    height: 100vh; 
+    background: url('../r_imgs/background_2.webp') center/cover no-repeat; 
+    margin-top: -35vh; /* Pulls up behind hero—no gap on scroll */
+    opacity: 1;
+}
+#setting .container { 
+    margin-top: 0vh;
+    min-height: 50vh; 
+}
+/* Image - Wider, Lift on Hover */
+#setting .image-lift-hover {
+    transition: transform 0.3s ease;
+}
+
+#setting .image-lift-hover:hover {
+    transform: translateY(-5px); /* Lifts up on hover */
+}
+
+.setting-text {
+    padding-left: 2rem; /* Space from image */
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Text starts at top */
+}
+
+
+#about .container { 
+    margin-top: -10vh;
+}
+
+@media (max-width: 768px) { 
+    #intro {
+        height: 100vh;
+        margin-top: -45vh;
+    }
+    #intro .container { 
+        margin-top: 20vh;
+        min-height: 100vh;
+    }
+    #setting { 
+        margin-top: -27vh;
+    }
+    #setting .container { 
+        padding-top: 0vh;
+        min-height: 100vh; 
+    }
+    .setting-text {
+        padding-top: 0;
+    }
+
+    #intro .section-title::after { 
+        width: 333px; 
+    }
+    #intro p {
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+
+
+#discovery, #waitlist, #cta { 
+    position: relative; 
+    background: #EDD2DB;
+    opacity: 1; 
+}
+
+#experience { 
+    position: relative; 
+    background: #EDD2DB url('../r_imgs/background_3.webp') center/cover no-repeat; 
+    opacity: 1; 
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height = width * 0.5625) */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px; /* Matches your rounded style */
+    box-shadow: 0 4px 20px rgba(248, 225, 233, 0.3); /* Pink glow */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.card-body h3 {
+    text-transform: uppercase;
+    color: #ada39a;
+}
+
+#impressions { 
+    position: relative; 
+    background: url('../r_imgs/background_5.webp') center/cover no-repeat; 
+    opacity: 1; 
+    padding: 6rem 0;
+}
+
+
+
+
+.combined-bg {
+    background: #fefcfc url('../r_imgs/background_4.webp') left center / contain no-repeat;
+    padding: 6rem 0; 
+}
+
+
+/* Wide Card - Max Width, Centered */
+.testimonial-card {
+    max-width: 1200px; /* Wide as requested */
+    margin: 0 auto; /* Centers the card */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(248, 225, 233, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Lift */
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(230, 230, 250, 0.4);
+}
+
+/* Internal Row - No Gutters for Seamless */
+.testimonial-card .row {
+    margin: 0;
+}
+
+/* Media Left - Vertical Video/Static */
+.testimonial-media {
+    position: relative;
+    height: 150px; /* Fixed height for consistency */
+    overflow: hidden;
+}
+
+.testimonial-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops vertical videos */
+    object-position: center top; /* Focuses face */
+}
+
+/* Play Overlay (Videos Only) */
+.play-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.testimonial-card:hover .play-overlay {
+    opacity: 1;
+}
+
+
+
+/* Static - No Overlay */
+.testimonial-media.static .play-overlay {
+    display: none;
+}
+
+/* Text Right */
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 5rem;
+}
+
+.quote {
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3erem;
+    color: #ada39a;
+    margin: 0;
+}
+
+
+/* Footer - Light Pink, Icons */
+footer {
+    font-size: 1rem;
+    border-top: 3px solid #fff; 
+    background: #EDD2DB;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .mx-2 img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+footer .mx-2 img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive - Stack Vertical on Mobile */
+@media (max-width: 992px) {
+    .testimonial-card .row {
+        flex-direction: column;
+    }
+    .testimonial-media {
+        height: 150px;
+    }
+    .testimonial-content {
+        padding: 1rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        max-width: 100%;
+    }
+    .testimonial-media {
+        height: 150px;
+    }
+}
+
+/* Responsive - Adjust Height on Mobile */
+@media (max-width: 768px) {
+    .testimonial-media {
+        height: 150px;
+    }
+    .testimonial-content {
+        padding: 1.5rem;
+    }
+    .quote {
+        font-size: 1.1rem;
+        padding: 0;
+    }
+    .signature {
+        font-size: 1.4rem;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+/* Buttons */
+.btn {
+    font-family: 'Inter', "Helvetica Neue", Arial, sans-serif; 
+    font-weight: 100; 
+    font-size: 1.0rem; 
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #9b9a9b; 
+    text-transform: uppercase;
+    letter-spacing: 0.05em; 
+    text-transform: uppercase; 
+}
+.btn-primary:hover { 
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.btn-outline-primary { 
+    border-color: #9b9a9b; 
+    text-transform: uppercase;
+    padding: 0.75rem 2rem; 
+    border-radius: 50px; 
+    font-weight: 100; 
+    transition: all 0.3s; 
+}
+.btn-outline-primary:hover { 
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #9b9a9b; 
+}
+.btn:focus,
+.btn:active,
+.btn:hover,
+a.btn:focus,
+a.btn:active,
+a.btn:hover {
+    outline: none !important; /* Kills the blue ring */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important; /* Removes any default glow */
+    border-color: inherit; /* Keeps your custom lavender/pink border */
+}
+
+/* Forms */
+.form-control { 
+    border-radius: 50px; 
+    border: 1px solid #E9ECEF; 
+    padding: 0.75rem 1.5rem; 
+    color: #9b9a9b;
+    font-size: 1.2rem;
+}
+.form-control:focus { 
+    border-color: #9b9a9b; 
+    color: #9b9a9b;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.25); 
+}
+/* Lighter Placeholder Text for Form Inputs/Textarea */
+#cta-form .form-control::placeholder {
+    color: #aaa !important; /* Light gray—very subtle */
+    opacity: 1; /* Ensures consistency across browsers */
+    font-style: italic; /* Optional: Matches your screenshot's gentle hint style */
+    font-size: 1.2rem;
+}
+
+
+
+/* Animations & AOS Compatibility */
+[data-aos="fade-up"], [data-aos="fade-down"], [data-aos="zoom-in"] { 
+    opacity: 0; 
+    transform: translateY(40px); /* Default for fade-up; override as needed */
+}
+[data-aos="zoom-in"] { 
+    transform: scale(0.9); 
+}
