@@ -188,14 +188,15 @@ section {
 @media (max-width: 768px) { 
     #intro {
         height: 1000px;
-        margin-top: -400px;
+        margin-top: -300px;
+        background: url('../r_imgs/background_1.webp') right/cover no-repeat; 
     }
     #intro .container { 
         margin-top: 1800px;
         min-height: 1000px;
     }
     #setting { 
-        margin-top: -250px;
+        margin-top: -150px;
     }
     #setting .container { 
         padding-top: 0vh;
