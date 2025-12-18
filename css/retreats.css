@@ -24,7 +24,7 @@ body, p, .lead, a  {
 /* Hero Banner - Normal Scroll, No Fixed */
 .hero-banner { 
     position: relative; 
-    height: 100vh; 
+    min-height: 100vh; 
     background: url('../r_imgs/hero_beach.webp') center/cover no-repeat; 
     display: flex; 
     align-items: flex-start; 
@@ -125,14 +125,14 @@ section {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    height: 100vh; /* height of the section for the purpose of the image */
+    min-height: 920px; /* height of the section for the purpose of the image */
     background: url('../r_imgs/background_1.webp') center/cover no-repeat; 
-    margin-top: -45vh; /* Pulls up the background image behind hero—no gap on scroll */
+    margin-top: -414px; /* Pulls up the background image behind hero—no gap on scroll */
     opacity: 1; 
 }
 #intro .container { 
-    margin-top: 20vh !important; /* not sure from where but increasing that supposed to pull content down */
-    min-height: 100vh; /* height of the section content wise */
+    margin-top: 180px !important; /* not sure from where but increasing that supposed to pull content down */
+    min-height: 920px; /* height of the section content wise */
     
 }
 
@@ -156,12 +156,12 @@ section {
     position: relative; 
     height: 100vh; 
     background: url('../r_imgs/background_2.webp') center/cover no-repeat; 
-    margin-top: -35vh; /* Pulls up behind hero—no gap on scroll */
+    margin-top: -322px; /* Pulls up behind hero—no gap on scroll */
     opacity: 1;
 }
 #setting .container { 
     margin-top: 0vh;
-    min-height: 50vh; 
+    min-height: 450px; 
 }
 /* Image - Wider, Lift on Hover */
 #setting .image-lift-hover {
@@ -187,19 +187,19 @@ section {
 
 @media (max-width: 768px) { 
     #intro {
-        height: 100vh;
-        margin-top: -45vh;
+        height: 1000px;
+        margin-top: -400px;
     }
     #intro .container { 
-        margin-top: 20vh;
-        min-height: 100vh;
+        margin-top: 1800px;
+        min-height: 1000px;
     }
     #setting { 
-        margin-top: -27vh;
+        margin-top: -250px;
     }
     #setting .container { 
         padding-top: 0vh;
-        min-height: 100vh; 
+        min-height: 920px; 
     }
     .setting-text {
         padding-top: 0;
@@ -377,7 +377,7 @@ footer .mx-2 img:hover {
         flex-direction: column;
     }
     .testimonial-media {
-        height: 150px;
+        height: 250px;
     }
     .testimonial-content {
         padding: 1rem !important;
@@ -389,14 +389,14 @@ footer .mx-2 img:hover {
         max-width: 100%;
     }
     .testimonial-media {
-        height: 150px;
+        height: 250px;
     }
 }
 
 /* Responsive - Adjust Height on Mobile */
 @media (max-width: 768px) {
     .testimonial-media {
-        height: 150px;
+        height: 250px;
     }
     .testimonial-content {
         padding: 1.5rem;
