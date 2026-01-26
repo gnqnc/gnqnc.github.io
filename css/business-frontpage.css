@@ -8,7 +8,6 @@ p, ol, ul, li, h4 {
     color: #333; /* Off-black for readability */
     font-size: 1.1rem; /* Slightly larger than 14pt for modern feel; was ~14pt */
     line-height: 1.6; /* Better spacing between lines */
-    margin-bottom: 1.5rem; /* More generous margins between paragraphs/lists */
 }
 
 p, .lead {
