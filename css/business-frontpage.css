@@ -20,8 +20,9 @@ ol ul li {
     margin: 0 0 0px;
 }
 
-nav li {
+nav footer {
     margin: 0 0 0px;
+    background-color: #1e3145; 
 }
 
 body {
