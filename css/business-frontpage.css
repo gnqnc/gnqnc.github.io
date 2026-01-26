@@ -10,6 +10,10 @@ p, ol, ul, li, h4 {
     line-height: 1.6; /* Better spacing between lines */
 }
 
+.text-light {
+    color: #f8f9fa;
+}
+
 p, .lead {
     line-height: 1.6; /* Better readability */
     margin-bottom: 1.5rem; /* Space between paragraphs */
